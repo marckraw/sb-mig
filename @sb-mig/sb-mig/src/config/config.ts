@@ -13,6 +13,7 @@ export interface IStoryblokConfig {
     componentDirectory: string;
     datasourcesDirectory: string;
     componentsDirectories: string[];
+    componentsRegex: string
     schemaFileExt: string;
     datasourceExt: string;
     rolesExt: string;
@@ -41,6 +42,7 @@ const defaultConfig: IStoryblokConfig = {
     componentDirectory: "storyblok",
     datasourcesDirectory: "storyblok",
     componentsDirectories: ["src", "storyblok"],
+    componentsRegex: 'storyblok-components-*',
     schemaFileExt: "sb.js",
     datasourceExt: "sb.datasource.js",
     rolesExt: "sb.roles.js",
